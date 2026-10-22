@@ -13,7 +13,30 @@
 ////////////////////////////////////////////////////////////
 void CalculateBonus(float fSalary, int iYears)
 {
-    
+    float fBonus = 0.0f;
+
+    if(iYears >= 10)
+    {
+        fBonus = (fSalary * 15) / 100;
+
+        printf("Bonus : %f",fBonus);
+    }
+    else if((iYears >= 5) && (iYears < 10))
+    {
+        fBonus = (fSalary * 10) / 100;
+
+        printf("Bonus : %f",fBonus);
+    }
+    else if((iYears >= 1) && (iYears < 5))
+    {
+        fBonus = (fSalary * 5) / 100;
+
+        printf("Bonus : %f",fBonus);
+    }
+    else
+    {
+        printf("Invalid Details \n");
+    }
 }
 
 ///////////////////////////////////////////////////
